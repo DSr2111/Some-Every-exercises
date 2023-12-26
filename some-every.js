@@ -20,7 +20,13 @@ Examples:
     hasAZero(1212121) // false
 */
 
-function hasAZero(num) {}
+function hasAZero(num) {
+  splitNum = num.split("");
+
+  splitNum.some(function (val) {
+    return val === 0;
+  });
+}
 
 /*
 Write a function called hasOnlyOddNumbers which accepts an array and returns true if every single number in the array is odd. If any of the values in the array are not odd, the function should return false. 
