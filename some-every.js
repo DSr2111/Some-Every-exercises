@@ -8,7 +8,7 @@ Examples:
 
 function hasOddNumber(arr) {
   return arr.some(function (num) {
-    if (num % 2 !== 0) return;
+    return num % 2 !== 0;
   });
 }
 
