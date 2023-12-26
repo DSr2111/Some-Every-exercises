@@ -34,7 +34,7 @@ function hasCertainKey(arr, key) {
 }
 
 function hasCertainValue(arr, key, searchValue) {
-  return arr.some(function (obj) {
-    return obj[key] === searchValue;
+  return arr.every(function (obj) {
+    return obj[key] === searchValue; //returns true if any property in the obj matches the searchValue
   });
 }
