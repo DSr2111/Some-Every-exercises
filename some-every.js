@@ -51,6 +51,6 @@ Examples:
 
 function hasCertainValue(arr, key, searchValue) {
   return arr.some(function (obj) {
-    return key === searchValue in obj;
+    return obj[key] === searchValue;
   });
 }
