@@ -21,10 +21,10 @@ Examples:
 */
 
 function hasAZero(num) {
-  splitNum = num.split("");
-
+  splitNum = num.toString().split("");
+  console.log(splitNum);
   splitNum.some(function (val) {
-    return val === 0;
+    return val === "0";
   });
 }
 
